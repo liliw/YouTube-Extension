@@ -1,0 +1,24 @@
+{
+  "name": "OAuth Tutorial FriendBlock",
+  "version": "1.0",
+  "description": "Uses OAuth to connect to Google's People API and display contacts photos.",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "identity",
+    "storage"
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "oauth2": {
+    "client_id": "672737831445-3lpk9h0h0hl104oubfafgm4jvov0lno5.apps.googleusercontent.com",
+    "scopes":[
+      "https://www.googleapis.com/auth/youtube"]
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://www.youtube.com/ https://s.ytimg.com; object-src 'self'",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArUVLjqPQ3YDxIbc04cufu1NMO6D7uoBhvAvlZ0T0r44JgRpISnQZ9LqroxMwdK8mOtVPY25UtIQHQI4mwpqWa7lVAsTp10VC3zKUHaKovaDLDo9ZBzmXUTDLZgx9bU7OH9uVgz8oDVs208w+i3jwIJMuhfTzS1tETnCmhVq1ccfuxNeR6BTADmb7G1GpHaXLdRmwRLZlFVg3QWHwkbI5AyN4GRSBuKEs7NIUfQqBm73tI0+9H5L2WEbpWsovVWHsafbb0LK7c55+WqRqcXEp32H13g23rD+t+UJGNj53fkrp4HCJg4f7E8MDafTFOUyuYRN+QlIj/Y7SmlA4m7AKkQIDAQAB"
+}

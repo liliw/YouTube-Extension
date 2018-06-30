@@ -1,0 +1,2 @@
+OAuth2: Authenticate Users with Google
+https://developer.chrome.com/extensions/tut_oauth
